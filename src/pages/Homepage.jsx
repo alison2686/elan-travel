@@ -1,9 +1,11 @@
 import React from 'react';
+import Header from '../components/Header'
 
-function Homepage() {
+const Homepage = () => {
     return(
         <div>
-            <h1>Hello!</h1>
+            <h1>Elan Travel</h1>
+            <Header />
         </div>
     )
 }
