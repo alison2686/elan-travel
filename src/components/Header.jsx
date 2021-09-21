@@ -1,5 +1,5 @@
 import React from 'react';
-import { link } from 'react-router-dom';
+// import { link } from 'react-router-dom';
 import background from '../images/travel_background.jpg';
 import logo from '../images/elan_logo_black_background.png';
 import '../css/Header.scss'
