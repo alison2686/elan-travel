@@ -11,8 +11,9 @@ import {
     NavBtn,
     NavBtnLink 
 } from './NavbarElements'
+// import Sidebar from '../Sidebar'
 
-const Navbar = () => {
+const Navbar = ({ toggle }) => {
     return (
         <div>
             <Nav>
@@ -20,7 +21,7 @@ const Navbar = () => {
                     <NavLogo to="/">
                         <h1>elan travel</h1>
                     </NavLogo>
-                    <MobileIcon>
+                    <MobileIcon onClick={toggle}>
                         <FaBars />
                     </MobileIcon>
                     <NavMenu>
