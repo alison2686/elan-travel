@@ -12,16 +12,15 @@ import {
     NavBtnLink 
 } from './NavbarElements'
 import logo from '../../images/elan_logo_black_background.png';
-// import Sidebar from '../Sidebar'
 
 const Navbar = ({ toggle }) => {
     return (
-        <div>
+        <React.Fragment>
             <Nav>
                 <NavbarContainer>
                 <img src={logo} alt='Elan Travel Services'/>
                     <NavLogo to="/">
-                        {/* <h1>elan travel</h1> */}   
+                        <h1>elan travel</h1>   
                     </NavLogo>
                     <MobileIcon onClick={toggle}>
                         <FaBars />
@@ -41,11 +40,11 @@ const Navbar = ({ toggle }) => {
                         </NavItem>
                     </NavMenu>
                     <NavBtn>
-                        <NavBtnLink to="/contact">Contact Us</NavBtnLink>
+                        <NavBtnLink to="/signin">Contact Us</NavBtnLink>
                     </NavBtn>
                 </NavbarContainer>
             </Nav>
-        </div>
+        </React.Fragment>
     )
 }
 

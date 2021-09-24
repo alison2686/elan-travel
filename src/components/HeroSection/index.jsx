@@ -14,7 +14,7 @@ import {
 } from './HeroElements'
 
 const HeroSection = () => {
-    const [hover, setHover] = useState(false)
+    const [hover, setHover] = useState(true)
 
     const onHover = () => {
         setHover(!hover)
