@@ -11,6 +11,7 @@ import {
     NavBtn,
     NavBtnLink 
 } from './NavbarElements'
+import logo from '../../images/elan_logo_black_background.png';
 // import Sidebar from '../Sidebar'
 
 const Navbar = ({ toggle }) => {
@@ -18,8 +19,9 @@ const Navbar = ({ toggle }) => {
         <div>
             <Nav>
                 <NavbarContainer>
+                <img src={logo} alt='Elan Travel Services'/>
                     <NavLogo to="/">
-                        <h1>elan travel</h1>
+                        {/* <h1>elan travel</h1> */}   
                     </NavLogo>
                     <MobileIcon onClick={toggle}>
                         <FaBars />

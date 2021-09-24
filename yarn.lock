@@ -193,6 +193,51 @@
     "@types/yargs" "^16.0.0"
     "chalk" "^4.0.0"
 
+"@juggle/resize-observer@^3.3.0":
+  "integrity" "sha512-zMM9Ds+SawiUkakS7y94Ymqx+S0ORzpG3frZirN3l+UlXUmSUR7hF4wxCVqW+ei94JzV5kt0uXBcoOEAuiydrw=="
+  "resolved" "https://registry.npmjs.org/@juggle/resize-observer/-/resize-observer-3.3.1.tgz"
+  "version" "3.3.1"
+
+"@react-md/icon@^3.1.0":
+  "integrity" "sha512-sNzKRYrjVIYSZ1/G8vCz6x3bQKbgWLRUN/j8OwZYPaMGLZtng6MR2xR8iMws3p5csLindxuXcHZEUz1OiltpdQ=="
+  "resolved" "https://registry.npmjs.org/@react-md/icon/-/icon-3.1.0.tgz"
+  "version" "3.1.0"
+  dependencies:
+    "@react-md/theme" "^3.1.0"
+    "@react-md/typography" "^3.1.0"
+    "@react-md/utils" "^3.1.0"
+    "classnames" "^2.3.1"
+  optionalDependencies:
+    "prop-types" ">= 15.6"
+
+"@react-md/theme@^3.1.0":
+  "integrity" "sha512-sjFAqTIaoCBGmuCVHjcchMxWusghoEizKutaX4T15Nt8TqwonLs124xr+VwfL2Qsg5MF6iLQIopntlsFpox2CA=="
+  "resolved" "https://registry.npmjs.org/@react-md/theme/-/theme-3.1.0.tgz"
+  "version" "3.1.0"
+  dependencies:
+    "@react-md/utils" "^3.1.0"
+  optionalDependencies:
+    "prop-types" ">= 15.6"
+
+"@react-md/typography@^3.1.0":
+  "integrity" "sha512-EFqQ8CbN3plckdOjmdV7SJjA0oIbUgXJmajDGMv0H7dAQCEHn8ydPGgzd/u5GOvAzEguFZW3wHOHdhrpBmw4SA=="
+  "resolved" "https://registry.npmjs.org/@react-md/typography/-/typography-3.1.0.tgz"
+  "version" "3.1.0"
+  dependencies:
+    "@react-md/theme" "^3.1.0"
+    "@react-md/utils" "^3.1.0"
+    "classnames" "^2.3.1"
+  optionalDependencies:
+    "prop-types" ">= 15.6"
+
+"@react-md/utils@^3.1.0":
+  "integrity" "sha512-oijkvHkBtZTOSR7rMnB8s719bdfrjozNnZDKAEUgJOKIslQMklhFcgw5cucTBUVHzXUTB8Rs8nX7TRvZUytQxA=="
+  "resolved" "https://registry.npmjs.org/@react-md/utils/-/utils-3.1.0.tgz"
+  "version" "3.1.0"
+  dependencies:
+    "@juggle/resize-observer" "^3.3.0"
+    "classnames" "^2.3.1"
+
 "@testing-library/dom@^7.28.1", "@testing-library/dom@>=7.21.4":
   "integrity" "sha512-3UqjCpey6HiTZT92vODYLPxTBWlM8ZOOjr3LX5F37/VRipW2M1kX6I/Cm4VXzteZqfGfagg8yXywpcOgQBlNsQ=="
   "resolved" "https://registry.npmjs.org/@testing-library/dom/-/dom-7.31.2.tgz"
@@ -2160,6 +2205,11 @@
     "define-property" "^0.2.5"
     "isobject" "^3.0.0"
     "static-extend" "^0.1.1"
+
+"classnames@^2.3.1":
+  "integrity" "sha512-OlQdbZ7gLfGarSqxesMesDa5uz7KFbID8Kpq/SxIoNGDqY8lSYs0D+hhtBXhcdB3rcbXArFr7vlHheLk1voeNA=="
+  "resolved" "https://registry.npmjs.org/classnames/-/classnames-2.3.1.tgz"
+  "version" "2.3.1"
 
 "clean-css@4.2.x":
   "integrity" "sha512-VcMWDN54ZN/DS+g58HYL5/n4Zrqe8vHJpGA8KdgUXFU4fuP/aHNw8eld9SyEIyabIMJX/0RaY/fplOo5hYLSFA=="
@@ -7434,7 +7484,7 @@
   dependencies:
     "asap" "~2.0.3"
 
-"prop-types@^15.0.0", "prop-types@^15.5.10", "prop-types@^15.6.2", "prop-types@^15.7.2":
+"prop-types@^15.0.0", "prop-types@^15.5.10", "prop-types@^15.6.2", "prop-types@^15.7.2", "prop-types@>= 15.6":
   "integrity" "sha512-8QQikdH7//R2vurIJSutZ1smHYTcLpRWEOlHnzcWHmBYrOGUysKwSsrC89BCiFj3CbrfJ/nXFdJepOVrY1GCHQ=="
   "resolved" "https://registry.npmjs.org/prop-types/-/prop-types-15.7.2.tgz"
   "version" "15.7.2"
@@ -7738,7 +7788,7 @@
     "lodash.throttle" "^4.1.1"
     "prop-types" "^15.7.2"
 
-"react@*", "react@^0.14.0 || ^15.0.0 || ^16.0.0 || ^17.0.0", "react@^15.5.4 || ^16.0.0 || ^17.0.0", "react@^17.0.2", "react@>= 16.8.0", "react@>=15", "react@17.0.2":
+"react@*", "react@^0.14.0 || ^15.0.0 || ^16.0.0 || ^17.0.0", "react@^15.5.4 || ^16.0.0 || ^17.0.0", "react@^17.0.2", "react@>= 16.8", "react@>= 16.8.0", "react@>=15", "react@17.0.2":
   "integrity" "sha512-gnhPt75i/dq/z3/6q/0asP78D0u592D5L1pd7M8P+dck6Fu/jJeL6iVVK23fptSUZj8Vjf++7wXA8UNclGQcbA=="
   "resolved" "https://registry.npmjs.org/react/-/react-17.0.2.tgz"
   "version" "17.0.2"
