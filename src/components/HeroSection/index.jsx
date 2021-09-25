@@ -14,7 +14,7 @@ import {
 } from './HeroElements'
 
 const HeroSection = () => {
-    const [hover, setHover] = useState(true)
+    const [hover, setHover] = useState(false)
 
     const onHover = () => {
         setHover(!hover)
@@ -28,7 +28,7 @@ const HeroSection = () => {
             <HeroContent>
                 <HeroH1>Looking for a reason to get away?</HeroH1>
                 <HeroP>
-                Stop looking and just book it! You are the reason.
+                Stop looking and just book it!
                 </HeroP>
                 <HeroBtnWrapper>
                     <Button 
