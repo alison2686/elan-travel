@@ -114,3 +114,17 @@ export const NavBtnLink = styled(LinkR)`
         color: #010606;
     }
 `;
+
+export const ImgWrap = styled.div`
+    max-width: 90px;
+    height: 100%;
+`
+export const Img = styled.img`
+    width: 95px;
+    height: 78px;
+    /* border: 1px solid red; */
+    /* overflow: hidden; */
+    /* z-index: 3; */
+    /* margin: 0 0 10px 0;
+    padding-right: 0; */
+`

@@ -9,7 +9,9 @@ import {
     NavItem, 
     NavLinks,
     NavBtn,
-    NavBtnLink 
+    NavBtnLink,
+    ImgWrap,
+    Img
 } from './NavbarElements'
 import logo from '../../images/elan_logo_black_background.png';
 
@@ -18,9 +20,12 @@ const Navbar = ({ toggle }) => {
         <React.Fragment>
             <Nav>
                 <NavbarContainer>
-                <img src={logo} alt='Elan Travel Services'/>
+                {/* <img src={logo} alt='Elan Travel Services'/> */}
                     <NavLogo to="/">
                         {/* <h1>elan travel</h1>    */}
+                        <ImgWrap>
+                            <Img src={logo} alt='Elan Travel Services'/>
+                        </ImgWrap>
                     </NavLogo>
                     <MobileIcon onClick={toggle}>
                         <FaBars />

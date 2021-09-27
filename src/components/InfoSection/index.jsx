@@ -14,7 +14,7 @@ import {
     ImgWrap,
     Img
 } from './InfoElements'
-import ImgPlane from '../../images/svg-1.svg'
+// import ImgPlane from '../../images/svg-1.svg'
 
 
 const InfoSection = ({
@@ -59,7 +59,7 @@ const InfoSection = ({
                         </Column1>
                         <Column2>
                             <ImgWrap>
-                            <Img src={ImgPlane} alt={alt} />
+                            <Img src={img} alt={alt} />
                             {/* <ImageOne /> */}
                             </ImgWrap>
                         </Column2>
