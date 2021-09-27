@@ -1,16 +1,16 @@
 import React from 'react'
-// import Homepage from './pages/Homepage'
-// import Navbar from './components/Navbar'
-// import Sidebar from './components/Sidebar';
-import Home from './pages'
-import { BrowserRouter as Router } from 'react-router-dom'
+import { BrowserRouter as Router, Switch, Route } from 'react-router-dom'
 import './App.css'
+import Home from './pages'
+import SigninPage from './pages/signin'
 
 function App() {
   return (
-    // <Homepage />
     <Router>
-      <Home />
+      <Switch>
+        <Route path='/' component={Home} exact />
+        <Route path='/signin' component={SigninPage} exact />
+      </Switch>
     </Router>
   );
 }
