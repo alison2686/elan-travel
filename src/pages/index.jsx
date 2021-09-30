@@ -5,7 +5,8 @@ import InfoSection from '../components/InfoSection'
 import { 
     homeObjOne,
     homeObjTwo,
-    homeObjThree
+    homeObjThree,
+    homeObjFour
 } from '../components/InfoSection/Data'
 import Navbar from '../components/Navbar'
 import Sidebar from '../components/Sidebar'
@@ -27,6 +28,7 @@ const Home = () => {
             <InfoSection {...homeObjTwo} />
             <Services />
             <InfoSection {...homeObjThree} />
+            <InfoSection {...homeObjFour} />
             <Footer />
         </React.Fragment>
     )

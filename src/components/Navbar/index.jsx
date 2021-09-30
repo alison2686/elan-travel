@@ -15,7 +15,7 @@ import {
     ImgWrap,
     Img
 } from './NavbarElements'
-import logo from '../../images/elan_logo_black_background.png';
+import logo from '../../images/elan_logo_black_whitebackground.png';
 
 const Navbar = ({ toggle }) => {
 const [scrollNav, setScrollNav] = useState(false)
@@ -53,16 +53,6 @@ const changeNav = () => {
                     </MobileIcon>
                     <NavMenu>
                         <NavItem>
-                            <NavLinks to="about"
-                            scrollNav={scrollNav}
-                            smooth={true} 
-                            duration={500} 
-                            spy={true} 
-                            exact='true' 
-                            offset={-80}
-                            >About</NavLinks>
-                        </NavItem>
-                        <NavItem>
                             <NavLinks to="discover"
                             scrollNav={scrollNav}
                             smooth={true} 
@@ -89,8 +79,18 @@ const changeNav = () => {
                             duration={500} 
                             spy={true} 
                             exact='true' 
-                            offset={-80}                            
+                            offset={-80}                           
                             >Contact Us</NavLinks>
+                        </NavItem>
+                        <NavItem>
+                            <NavLinks to="aboutElana"
+                            scrollNav={scrollNav}
+                            smooth={true} 
+                            duration={500}
+                            spy={true} 
+                            exact='true' 
+                            offset={-80}
+                            >About</NavLinks>
                         </NavItem>
                     </NavMenu>
                     <NavBtn>

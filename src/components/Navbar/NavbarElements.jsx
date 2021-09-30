@@ -3,9 +3,9 @@ import { Link as LinkR } from 'react-router-dom'
 import { Link as LinkS } from 'react-scroll'
 
 export const Nav = styled.nav`
-    background: ${({scrollNav}) => scrollNav ? '#000' : 'rgba(255,196,12,0.8)'};
-    height: 80px;
-    margin-top: -80px;
+    background: ${({scrollNav}) => scrollNav ? '#000' : 'rgba(254,90,29,0.8)'};
+    height: 90px;
+    margin-top: -90px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -118,14 +118,15 @@ export const NavBtnLink = styled(LinkR)`
 `;
 
 export const ImgWrap = styled.div`
-    max-width: 90px;
-    height: 100%;
+    /* max-width: 90px;
+    height: 100%; */
 `
 export const Img = styled.img`
-    margin-top: 2px;
-    width: 75px;
-    height: 75px;
+    margin-top: 45px;
+    width: 200px;
+    height: 200px;
     border-radius: 50px;
+    /* background: #000; */
     /* border: 1px solid red; */
     /* overflow: hidden; */
     /* z-index: 3; */
