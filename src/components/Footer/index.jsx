@@ -4,6 +4,7 @@ import {
     FaInstagram, 
     FaYoutube 
 } from 'react-icons/fa'
+import {animateScroll as scroll} from 'react-scroll'
 import { 
     FooterContainer, 
     FooterWrap, 
@@ -17,10 +18,18 @@ import {
     SocialLogo,
     SocialIcons,
     SocialIconLink,
-    WebsiteRights
+    WebsiteRights,
+    AffiliateLink,
+    ImgWrap,
+    Img
 } from './FooterElements'
+import logo from '../../images/elan_logo_black_background.png';
 
 const Footer = () => {
+    const toggleHome = () => {
+        scroll.scrollToTop();
+    }
+
     return (
         <FooterContainer>
             <FooterWrap>
@@ -31,38 +40,32 @@ const Footer = () => {
                                 <FooterLink to='/about'>How it works</FooterLink>
                                 <FooterLink to='/about'>Testimonials</FooterLink>
                                 <FooterLink to='/about'>Travel Blog</FooterLink>
-                                <FooterLink a='https://www.bravobeachvacations.com/'>An affiliate of Bravo Beach Vacations</FooterLink>
                         </FooterLinkItems>
                         <FooterLinkItems>
-                            <FooterLinkTitle>Videos</FooterLinkTitle>
-                                <FooterLink to='/about'>Submit Video</FooterLink>
-                                <FooterLink to='/about'>Ambassadors</FooterLink>
-                                <FooterLink to='/about'>Agency</FooterLink>
-                                <FooterLink to='/about'>Influencer</FooterLink>
-                        </FooterLinkItems>
-                    </FooterLinksWrapper>
-                    <FooterLinksWrapper>
-                        <FooterLinkItems>
-                            <FooterLinkTitle>Contact Us</FooterLinkTitle>
+                        <FooterLinkTitle>Contact Us</FooterLinkTitle>
                                 <FooterLink to='/about'>Contact</FooterLink>
                                 <FooterLink to='/about'>Support</FooterLink>
                                 <FooterLink to='/about'>Destinations</FooterLink>
                                 <FooterLink to='/about'>Travel Updates</FooterLink>
                         </FooterLinkItems>
+                    </FooterLinksWrapper>
+                    <FooterLinksWrapper>
                         <FooterLinkItems>
-                            <FooterLinkTitle>Social Media</FooterLinkTitle>
-                                <FooterLink a='www.instagram.com'>Instagram</FooterLink>
-                                <FooterLink a='www.linkedin.com'>LinkedIn</FooterLink>
-                                <FooterLink a='www.youtube.com'>Youtube</FooterLink>
+                            <FooterLinkTitle>Affiliates</FooterLinkTitle>
+                            <AffiliateLink href="//www.bravobeachvacations.com/">Bravo Beach Vacations</AffiliateLink>
                         </FooterLinkItems>
                     </FooterLinksWrapper>
                 </FooterLinksContainer>
                 <SocialMedia>
                     <SocialMediaWrap>
-                        <SocialLogo to='/'>elan travel</SocialLogo>
+                        <SocialLogo to='/' onClick={toggleHome}>                        
+                            <ImgWrap>
+                                <Img src={logo} alt='Elan Travel Services'/>
+                            </ImgWrap>
+                        </SocialLogo>
                         <WebsiteRights>elan travel © {new Date().getFullYear()} All rights reserved</WebsiteRights>
                         <SocialIcons>
-                            <SocialIconLink href='//ww.instagram.com' target='_blank' aria-label='Instagram'>
+                            <SocialIconLink href='//www.instagram.com' target='_blank' aria-label='Instagram'>
                                 <FaInstagram />
                             </SocialIconLink>
                             <SocialIconLink href='//wwwlinkedin.com' target='_blank' aria-label='Linkedin'>

@@ -47,7 +47,7 @@ const Sidebar = ({isOpen, toggle}) => {
                     <SidebarRoute 
                         to="/signin"
                     >
-                        Contact Us
+                        Login
                     </SidebarRoute>
                 </SideBtnWrap>
             </SidebarWrapper>

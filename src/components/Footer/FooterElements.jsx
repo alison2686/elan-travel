@@ -106,3 +106,16 @@ export const SocialIconLink = styled.a`
     color: #fff;
     font-size: 24px;
 `
+export const AffiliateLink = styled.a`
+    color: #fff;
+`
+export const ImgWrap = styled.div`
+    max-width: 90px;
+    height: 100%;
+`
+export const Img = styled.img`
+    margin-top: 2px;
+    width: 75px;
+    height: 75px;
+    border-radius: 50px;
+`

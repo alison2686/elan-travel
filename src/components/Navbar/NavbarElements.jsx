@@ -3,9 +3,9 @@ import { Link as LinkR } from 'react-router-dom'
 import { Link as LinkS } from 'react-scroll'
 
 export const Nav = styled.nav`
-    background: #000;
+    background: ${({scrollNav}) => scrollNav ? '#000' : 'rgba(255,196,12,0.8)'};
     height: 80px;
-    /* margin-top: -80px; */
+    margin-top: -80px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -63,7 +63,7 @@ export const NavMenu = styled.ul`
     text-align: center;
     margin-right: -22px;
 
-    @media screen and (mx-width: 768px) {
+    @media screen and (max-width: 768px) {
         display: none;
     }
 `;
@@ -73,13 +73,15 @@ export const NavItem = styled.li`
 `;
 
 export const NavLinks = styled(LinkS)`
-    color: #fff;
+    /* color: #ffc40c; */
+    color: ${({scrollNav}) => scrollNav ? '#fff' : '#000'};;
     display: flex;
     align-items: center;
     text-decoration: none;
     padding: 0 1rem;
     height: 100%;
     cursor: pointer;
+    font-weight: bold;
 
     &.active {
         border-bottom: 3px solid #01bf71;
@@ -120,8 +122,10 @@ export const ImgWrap = styled.div`
     height: 100%;
 `
 export const Img = styled.img`
-    width: 95px;
-    height: 78px;
+    margin-top: 2px;
+    width: 75px;
+    height: 75px;
+    border-radius: 50px;
     /* border: 1px solid red; */
     /* overflow: hidden; */
     /* z-index: 3; */

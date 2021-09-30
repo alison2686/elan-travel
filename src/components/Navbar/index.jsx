@@ -1,5 +1,7 @@
-import React from 'react'
+import React, {useState, useEffect} from 'react'
 import {FaBars} from 'react-icons/fa'
+import {IconContext} from 'react-icons/lib'
+import {animateScroll as scroll} from 'react-scroll'
 import { 
     Nav, 
     NavbarContainer, 
@@ -16,12 +18,31 @@ import {
 import logo from '../../images/elan_logo_black_background.png';
 
 const Navbar = ({ toggle }) => {
+const [scrollNav, setScrollNav] = useState(false)
+
+const changeNav = () => {
+    if(window.scrollY >= 80) {
+        setScrollNav(true)
+    } else {
+        setScrollNav(false)
+    }
+}
+
+    useEffect(() => {
+        window.addEventListener('scroll', changeNav)
+    }, [])
+
+    const toggleHome = () => {
+        scroll.scrollToTop();
+    }
+
     return (
         <React.Fragment>
-            <Nav>
+        <IconContext.Provider value={{ color: '#fff'}}>
+            <Nav scrollNav={scrollNav}>
                 <NavbarContainer>
                 {/* <img src={logo} alt='Elan Travel Services'/> */}
-                    <NavLogo to="/">
+                    <NavLogo to="/" onClick={toggleHome}>
                         {/* <h1>elan travel</h1>    */}
                         <ImgWrap>
                             <Img src={logo} alt='Elan Travel Services'/>
@@ -32,16 +53,44 @@ const Navbar = ({ toggle }) => {
                     </MobileIcon>
                     <NavMenu>
                         <NavItem>
-                            <NavLinks to="about">About</NavLinks>
+                            <NavLinks to="about"
+                            scrollNav={scrollNav}
+                            smooth={true} 
+                            duration={500} 
+                            spy={true} 
+                            exact='true' 
+                            offset={-80}
+                            >About</NavLinks>
                         </NavItem>
                         <NavItem>
-                            <NavLinks to="discover">Discover</NavLinks>
+                            <NavLinks to="discover"
+                            scrollNav={scrollNav}
+                            smooth={true} 
+                            duration={500} 
+                            spy={true} 
+                            exact='true' 
+                            offset={-80}                            
+                            >Discover</NavLinks>
                         </NavItem>
                         <NavItem>
-                            <NavLinks to="services">Travel Services</NavLinks>
+                            <NavLinks to="services"
+                            scrollNav={scrollNav}
+                            smooth={true} 
+                            duration={500} 
+                            spy={true} 
+                            exact='true' 
+                            offset={-80}                        
+                            >Travel Services</NavLinks>
                         </NavItem>
                         <NavItem>
-                            <NavLinks to="contact">Contact Us</NavLinks>
+                        <NavLinks to="contact"
+                            scrollNav={scrollNav}
+                            smooth={true} 
+                            duration={500} 
+                            spy={true} 
+                            exact='true' 
+                            offset={-80}                            
+                            >Contact Us</NavLinks>
                         </NavItem>
                     </NavMenu>
                     <NavBtn>
@@ -49,6 +98,7 @@ const Navbar = ({ toggle }) => {
                     </NavBtn>
                 </NavbarContainer>
             </Nav>
+            </IconContext.Provider>
         </React.Fragment>
     )
 }

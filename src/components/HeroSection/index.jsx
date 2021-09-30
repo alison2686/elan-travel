@@ -21,7 +21,7 @@ const HeroSection = () => {
     }
  
     return (
-        <HeroContainer>
+        <HeroContainer id='home'>
             <HeroBg>
                 <VideoBg autoPlay loop muted src={Video} type='video4/mp4' />
             </HeroBg>
@@ -32,11 +32,16 @@ const HeroSection = () => {
                 </HeroP>
                 <HeroBtnWrapper>
                     <Button 
-                        to='contact' 
+                        onClick={event => window.location.href='https://apps.itams.com/TASLive/customer/register?id=0x00d5a26df3a6ab468d3b11145121e520010000000ab765624c1bd406a5ba080d3b4b3f2e871bad6ebd20f05036e8e520e1b5cdf7'}
                         onMouseEnter={onHover}
                         onMouseLeave={onHover}
                         primary='true'
-                        dark='true'    
+                        dark='true'
+                        smooth={true} 
+                        duration={500} 
+                        spy={true} 
+                        exact='true' 
+                        offset={-80}    
                     >
                         Get Started {hover ? <ArrowForward /> : <ArrowRight />}
                     </Button>
