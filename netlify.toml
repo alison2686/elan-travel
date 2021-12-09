@@ -5,5 +5,3 @@
 
   [build.environment]
   NODE_VERSION="14.0.0"
-
-  CI= npm run build
