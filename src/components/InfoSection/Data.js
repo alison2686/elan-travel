@@ -8,7 +8,7 @@ export const homeObjOne = {
     description: 'Make those memories, meet new people, form long-lasting bonds, and prioritize yourself for once. Then do it all over again. I dare you!',
     buttonLabel: 'Get started',
     imgStart: true,
-    img: require('../../images/svg-4.svg'),
+    img: require('../../images/svg-9.svg'),
     alt: 'Plane',
     dark: true,
     primary: true,
