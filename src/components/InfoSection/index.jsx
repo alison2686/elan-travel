@@ -12,7 +12,9 @@ import {
     Subtitle, 
     BtnWrap,
     ImgWrap,
-    Img
+    Img,
+    BioImgWrap,
+    BioImg
 } from './InfoElements'
 // import ImgPlane from '../../images/svg-1.svg'
 
@@ -27,7 +29,9 @@ const InfoSection = ({
     darkText, 
     description, 
     buttonLabel, 
-    img, 
+    img,
+    bioImg,
+    bioAlt, 
     alt, 
     primary, 
     dark, 
@@ -59,9 +63,11 @@ const InfoSection = ({
                         </Column1>
                         <Column2>
                             <ImgWrap>
-                            <Img src={img} alt={alt} />
-                            {/* <ImageOne /> */}
+                                <Img src={img} alt={alt} />
                             </ImgWrap>
+                            <BioImgWrap>
+                                <BioImg src={bioImg} alt={bioAlt} />
+                            </BioImgWrap>
                         </Column2>
                     </InfoRow>
                 </InfoWrapper>

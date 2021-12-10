@@ -90,6 +90,14 @@ export const Img = styled.img`
     width: 100%;
     margin: 0 0 10px 0;
     padding-right: 0;
-    border-radius: 10px;
 `
-
+export const BioImgWrap = styled.div`
+    max-width: 555px;
+    height: 100%;
+`
+export const BioImg = styled.img`
+    width: 100%;
+    margin: 0 0 10px 0;
+    padding-right: 0;
+    border-radius: 50%;
+`
